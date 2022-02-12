@@ -1,0 +1,57 @@
+* { 
+	font-family: "Roboto", "Open Sans";
+}
+
+.tableFixHead { 
+	overflow-y: auto; 
+	height: 100px; 
+}
+
+.tableFixHead th {
+	position: sticky; 
+	top: 0; 
+}
+
+table { 
+	border-collapse: collapse; 
+	width: 100%; 
+}
+
+th, td { 
+	padding: 8px 16px; 
+	vertical-align: top;
+}
+
+th { 
+	background:#eee; 
+}
+
+.verttext {
+	transform: rotate(-90deg);
+	padding: 0;
+	white-space: nowrap;
+}
+
+.topNubex {
+	position: fixed;
+	left: 45px;
+	bottom: 45px;
+}
+
+a { 
+	color:black;
+} 
+   
+form {
+     display:inline;
+     margin:0px;
+     padding:0px;
+}
+
+tr:hover td {
+	background: #A4C3E5;
+}
+
+tr:nth-child(2n) {
+	background: #B8E5A4;
+}

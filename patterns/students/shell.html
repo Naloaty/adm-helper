@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>AdmHelper Lite</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles/style.css">
+		<style>
+			body {{
+				background-color: #ECEDEF;
+			}} 
+		</style>
+	</head>
+	
+	<body>
+		<center>
+			<h1>{title}<h1>
+		</center>
+		
+		<center>
+			<a href="{back_link}">К списку факультетов и специальностей</a>
+		</center>
+		<br>
+		<br>
+		<table>
+			<tbody>
+				<tr> 
+					<th>Заявлений</th>
+					<th>Людей</th>
+					<th>Согласий</th>
+					<th>Особое право</th>
+					<th>Целевой набор</th>
+					<th>БВИ</th>
+					<th>Общий конкурс</th> 
+				</tr>
+				<tr>
+					<td align="center">{admissions}</td>
+					<td align="center">{students}</td>
+					<td align="center">{consents}</td>
+					<td align="center">{special_right}</td>
+					<td align="center">{target_recruitment}</td>
+					<td align="center">{no_enrollment_tests}</td>
+					<td align="center">{common_contest}</td> 
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		{source_block}
+		<br>
+		<center>
+			<h2>Ранжированный список поступающих. Информация актуальна на: {date_fetched} МСК</h2>
+		</center>	
+		<br>		
+		<table class="tableFixHead">
+			<thead>
+				<tr>
+					<th>№ (табл)</th>
+					<th>№ (согл)</th>
+					<th>ФИО</th>
+					<th>Согл</th>
+					<th>Тип</th>
+					<th>Пр1</th>
+					<th>Пр2</th>
+					<th>Пр3</th>
+					<th>ИД</th>
+					<th>Сумма</th>
+					<th>Extra</th>
+					<th>Другие заявления</th>
+				<tr>
+			</thead>
+			<tbody>
+				{table_body}
+			</tbody>
+		</table>
+	</body>
+
+</html>

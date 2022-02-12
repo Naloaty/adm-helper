@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title>AdmHelper Lite</title>
+		<link rel="stylesheet" href="styles/style.css">
+		<meta charset="utf-8">
+		<style>
+			body {{
+				background-color: #ECEDEF;
+			}} 
+		</style>
+	</head>
+	
+	<body>
+		<center>
+			<h1>{university_name}<h1>
+		</center>
+		<center>
+			<a href="{back_link}">К списку университетов</a>
+		</center>
+		<br>
+		<br>
+		<table>
+			<tbody>
+				<tr> 
+					<th>Заявлений</th>
+					<th>Людей</th>
+					<th>Согласий</th>
+					<th>Особое право</th>
+					<th>Целевой набор</th>
+					<th>БВИ</th>
+					<th>Общий конкурс</th> 
+				</tr>
+				<tr>
+					<td align="center">{admissions}</td>
+					<td align="center">{students}</td>
+					<td align="center">{consents}</td>
+					<td align="center">{special_right}</td>
+					<td align="center">{target_recruitment}</td>
+					<td align="center">{no_enrollment_tests}</td>
+					<td align="center">{common_contest}</td> 
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		{enroll_block}
+		<br>
+		<center>
+			<h2>Список факультетов и специальностей</h2>
+		</center>	
+		<br>		
+		<table class="tableFixHead">
+			<thead>
+				<tr>
+					<th>Специальность, ОП</th>
+					<th>Заявлений</th>
+					<th>Людей</th>
+					<th>Согласий</th>
+					<th>Особое право</th>
+					<th>Целевой набор</th>
+					<th>БВИ</th>
+					<th>Общий конкурс</th>
+				<tr>
+			</thead>
+			<tbody>
+				{table_body}
+			</tbody>
+		</table>
+	</body>
+
+</html>
